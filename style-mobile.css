@@ -1,0 +1,182 @@
+/* ALL SETTINGS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --purple: #BF4E8C;
+    --purple-transparent: #bf4e8cda;
+    --light-purple: #F285C1;
+    --yellow: #F2B705;
+    --light-yellow: #F2DF80;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(./assets/bg1.jpg) no-repeat fixed center center;
+    background-size: cover;
+}
+
+label {
+    color: var(--purple);
+    font-size: 1.2em;
+    font-weight: 600;
+    font-variant: small-caps;
+    display: block;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--purple);
+    width: 100%;
+}
+
+.hide {display: none;}
+
+/* HEADER SETTINGS */
+
+header {
+    color: var(--purple);
+    background-color: white;
+    width: max-content;
+    margin: 0 auto;
+    padding: 0 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    text-align: center;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    letter-spacing: 0.2em;
+}
+
+/* FORM SETTINGS */
+
+.container-form, .container-edit {
+    background-color: white;
+    width: 380px;
+    padding: 8px;
+    margin: 10px auto 0 auto;
+    border-radius: 10px;
+}
+
+.flex-form {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-control, .name-edit {
+    width: 50%;
+    padding-right: 18px;
+    border-right: 1px solid var(--purple);
+}
+
+.amount-control, .amount-edit {
+    width: 45%;
+}
+
+button {
+    color: white;
+    background-color: var(--purple);
+
+    border-radius: 10px;
+    border: 1px solid var(--purple);
+
+    width: 100%;
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--purple);
+    background-color: white;
+}
+
+/* ITEMS SETTINGS */
+
+.item {
+    color: var(--purple);
+    letter-spacing: 0.09em;
+    font-weight: bold;
+
+    background-color: white;
+    width: 380px;
+    padding: 8px;
+    margin: 5px auto 0 auto;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex: 1;
+}
+
+.name-item {
+    font-size: 1em;
+}
+
+.amount-item {
+    color: white;
+    background-color: var(--purple);
+    text-align: center;
+
+    border: 2px solid var(--purple);
+    border-radius: 50%;
+
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tools > button {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons > button {
+    width: 45%;
+}
+
+/* DONE SETTINGS */
+
+.done {
+    color: white;
+    background-color: rgb(63, 187, 111);
+}
+
+.done > .item-info > .name-item{
+    font-style: italic;
+    text-decoration: line-through;
+}
+
+.done > .item-info > .amount-item {
+    border: 2px solid white;
+}

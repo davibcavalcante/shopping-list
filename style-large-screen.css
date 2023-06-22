@@ -1,0 +1,40 @@
+:root {
+    --purple: #BF4E8C;
+    --light-purple: #F285C1;
+    --yellow: #F2B705;
+    --light-yellow: #F2DF80;
+}
+
+header {
+    font-size: 2em;
+}
+
+.container-form, .container-edit {
+    width: 700px;
+}
+
+.item-control, .name-edit {
+    padding: none;
+    border: none;
+}
+
+.buttons {
+    justify-content: space-between;
+}
+
+.buttons > .cancel-edit-btn {
+    width: 47%;
+}
+
+.item {
+    width: 700px;
+}
+
+.amount-item {
+    margin-right: 10px;
+}
+
+.tools > button {
+    width: 50px;
+    height: 50px;
+}
