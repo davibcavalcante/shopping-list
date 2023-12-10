@@ -5,12 +5,15 @@
     --light-yellow: #F2DF80;
 }
 
-header {
-    font-size: 2em;
+.wrapper h1 {
+    font-size: 3em;
+    min-width: 700px;
+    max-width: 700px;
+
 }
 
 .container-form, .container-edit {
-    width: 700px;
+    max-width: 700px;
 }
 
 .item-control, .name-edit {
@@ -27,7 +30,7 @@ header {
 }
 
 .item {
-    width: 700px;
+    max-width: 700px;
 }
 
 .amount-item {
